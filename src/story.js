@@ -107,12 +107,20 @@ window.MIRA_STORIES = {
  ],evidence:{title:'Another clue, years later',kind:'image',file:'gypsum-vein.png',caption:'NASA / JPL-Caltech · Opportunity Homestake mineral vein · source requires image-by-image credit check',explain:'Look at the narrow bright stripe in the rock. My team named it Homestake. The mineral gypsum was evidence of water—and another clue that Mars had more than one kind of watery past.',zoom:true},after:[
  ['PLAYER','I thought the story was just “Mars had water.” It’s much more complicated.'],
  ['OPPORTUNITY','And much more interesting. The exciting part of science is that a new clue can change how you understand the old ones.'],
- ['OPPORTUNITY','I spent years following those clues. Until one day, the sunlight changed.'],
- ['PLAYER','What happened in 2018?'],
+ ['OPPORTUNITY','From that first little crater to the edge of Endeavour, every place raised new questions. Scientists on Earth spent years studying the images and measurements I sent back.'],
+ ['PLAYER','You really did keep discovering things, right to the end.'],
+ ['OPPORTUNITY','We tried. Even after my original mission had ended, there was always another rock to examine, another careful drive to plan, another patch of Mars to understand.'],
+ ['PLAYER','But... you said you aren’t driving anymore. How did your journey end?'],
  ['OPPORTUNITY','...'],
- ['OPPORTUNITY','I remember the sunlight growing faint. On Mars, I depended on it for everything. Then the dust kept coming.'],
- ['OPPORTUNITY','Would you look at that moment with me?']
- ],evidence:{title:'The storm',kind:'storm',caption:'AI-assisted supplied simulation of the 2018 Mars-wide dust storm, not historical NASA footage',explain:'NASA confirms Opportunity last contacted Earth on June 10, 2018. The storm reduced solar energy; what precisely happened inside the rover afterward is unknown.'}, after:[
+ ['OPPORTUNITY','There is one more memory I want to show you. It is a harder one.'],
+ ['PLAYER','I’m listening.'],
+ ['OPPORTUNITY','In 2018, a great dust storm spread across Mars. I depended on sunlight to keep going. And then the sky grew darker.']
+ ]},
+ {act:'09 · THE LAST SIGNAL',beats:[
+ ['OPPORTUNITY','...'],
+ ['OPPORTUNITY','I can show you what happened to the light. I cannot tell you everything that happened after my final message, because no further reply was received on Earth.'],
+ ['OPPORTUNITY','Stay with me for this last part of the journey.']
+ ],evidence:{title:'The storm',kind:'storm',caption:'Supplied cinematic simulation of the 2018 Mars-wide dust storm, not NASA archival footage',explain:'NASA confirms Opportunity last contacted Earth on June 10, 2018. The storm reduced solar energy; what precisely happened inside the rover afterward is unknown.'}, after:[
  ['PLAYER','That was a lot of dust. Did NASA try to reach you again?'],
  ['OPPORTUNITY','For months. My team sent commands and listened. The storm eventually subsided, but no response came back. NASA announced the mission’s end in February 2019.'],
  ['PLAYER','That makes me sad.'],
@@ -120,7 +128,7 @@ window.MIRA_STORIES = {
  ['OPPORTUNITY','The end of communication didn’t erase a single image, measurement, or discovery already sent home.'],
  ['OPPORTUNITY','And you followed those records all the way here.']
  ]},
- {act:'09 · WHAT REMAINS',beats:[
+ {act:'10 · WHAT REMAINS',beats:[
  ['PLAYER','I’m glad I found you.'],
  ['OPPORTUNITY','I’m glad you took the time to understand what the mission was about, '+ '{name}' +'.'],
  ['OPPORTUNITY','Before you leave, look once more at the landscape. It may seem still from here, but every ridge and layer holds a history far older than our machines.'],

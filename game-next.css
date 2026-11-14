@@ -81,4 +81,54 @@
 .mq-farewell-exit{top:92px;right:4%;left:auto;bottom:auto;transform:none;max-width:88vw}
 @media(max-width:600px){.mq-farewell-exit{top:64px;right:3%;left:auto;bottom:auto;max-width:70vw}.mq-farewell-exit .mq-btn{font-size:9px;padding:9px 11px}}
 
-.mq-start-panel h2{font:500 clamp(30px,4vw,56px) "Space Grotesk";margin:12px 0 10px}.mq-start-panel p{font-size:16px;color:#d6dde6;line-height:1.7;margin:0 0 18px}.mq-progress small{display:block;font:10px "IBM Plex Mono";letter-spacing:.12em;color:#d7c8aa;margin-top:10px}.mq-archive-fly{position:fixed;z-index:120;pointer-events:none;border-radius:10px;border:1px solid #ffffff88;box-shadow:0 15px 40px #000c;transform:translate(-50%,-50%) scale(1);opacity:1;transition:left .72s cubic-bezier(.2,.8,.2,1),top .72s cubic-bezier(.2,.8,.2,1),transform .72s cubic-bezier(.2,.8,.2,1),opacity .72s ease}.mq-search .mq-back{filter:brightness(.62)}.mq-panorama-scene{transition:background-position 900ms cubic-bezier(.2,.76,.18,1)}.mq-evidence-aside h3{scroll-margin-top:18px}.mq-dialogue .mq-btn{min-width:180px}.mq-evidence-visual.mq-zoomable::after{content:"";position:absolute;right:16px;bottom:16px;width:38px;height:38px;border-radius:50%;background:rgba(6,16,29,.66);border:1px solid rgba(255,255,255,.38);box-shadow:0 10px 24px #0008;pointer-events:none}.mq-evidence-visual{position:relative}.mq-evidence-visual.mq-zoomable::before{content:"+";position:absolute;right:29px;bottom:22px;color:#fff;font:700 22px/1 "Space Grotesk";z-index:2;pointer-events:none}.mq-travel .mq-vignette{background:linear-gradient(180deg,#03091485,transparent 20%,#03091422 56%,#020810b0),linear-gradient(90deg,#02050d33,transparent 75%)}
+.mq-start-panel h2{font:500 clamp(30px,4vw,56px) "Space Grotesk";margin:12px 0 10px}.mq-start-panel p{font-size:16px;color:#d6dde6;line-height:1.7;margin:0 0 18px}.mq-progress small{display:block;font:10px "IBM Plex Mono";letter-spacing:.12em;color:#d7c8aa;margin-top:10px}.mq-archive-fly{position:fixed;z-index:120;pointer-events:none;border-radius:10px;border:1px solid #ffffff88;box-shadow:0 15px 40px #000c;transform:translate(-50%,-50%) scale(1);opacity:1;transition:left .72s cubic-bezier(.2,.8,.2,1),top .72s cubic-bezier(.2,.8,.2,1),transform .72s cubic-bezier(.2,.8,.2,1),opacity .72s ease}.mq-search .mq-back{filter:brightness(.62)}.mq-panorama-scene{transition:background-position 900ms cubic-bezier(.2,.76,.18,1)}.mq-evidence-aside h3{scroll-margin-top:18px}.mq-dialogue .mq-btn{min-width:180px}.mq-evidence-visual.mq-zoomable::after{content:"";position:absolute;right:16px;bottom:16px;width:38px;height:38px;border-radius:50%;background:rgba(6,16,29,.66);border:1px solid rgba(255,255,255,.38);box-shadow:0 10px 24px #0008;pointer-events:none}.mq-evidence-visual{position:relative}.mq-evidence-visual.mq-zoomable::before{content:"+";position:absolute;right:29px;bottom:22px;color:#fff;font:700 22px/1 "Space Grotesk";z-index:2;pointer-events:none}.mq-travel .mq-vignette{background:linear-gradient(180deg,#03091485,transparent 20%,#03091422 56%,#020810b0),linear-gradient(90deg,#02050d33,transparent 75%)}/* v7 focused fixes — no unrelated redesign */
+.mq-panorama.mars-look .mq-panorama-scene{
+ background-image:url('assets/art/opportunity/g34.png');
+ background-size:200% 100%;
+ background-position:calc(var(--pan) * 100%) center;
+ transition:background-position 330ms cubic-bezier(.22,.8,.23,1);
+}
+.mq-panorama.mars-look:active{cursor:grabbing}
+.mq-dialogue-scene .mq-dialogue{
+ height:clamp(235px,30vh,310px);
+ min-height:0;
+ display:flex;
+ flex-direction:column;
+ overflow-y:auto;
+}
+.mq-dialogue-scene .mq-dialogue-actions{margin-top:auto;padding-top:12px}
+.mq-dialogue-scene .mq-player-choices{flex-shrink:0}
+/* The previous opaque black overlay covered the video completely. */
+.mq-evidence-screen.storm-scene .mq-storm-full{position:absolute;inset:0;background:#000;overflow:hidden;z-index:1}
+.mq-evidence-screen.storm-scene .mq-storm-video-wrap{
+ position:absolute;left:50%;top:39%;transform:translate(-50%,-50%);
+ width:min(980px,85vw);height:auto;aspect-ratio:16/9;
+ border:1px solid #ffffff32;border-radius:12px;overflow:hidden;
+ background:#111;z-index:1;box-shadow:0 18px 60px #000;
+}
+.mq-evidence-screen.storm-scene .mq-storm-video-wrap video{display:block;width:100%;height:100%;object-fit:contain;opacity:1;visibility:visible}
+.mq-evidence-screen.storm-scene .mq-storm-intro-curtain{
+ position:absolute;inset:0;background:#000;pointer-events:none;z-index:5;
+ animation:mqStormCurtainReveal 2.4s ease-out both;
+}
+@keyframes mqStormCurtainReveal{0%,40%{opacity:1}100%{opacity:0;visibility:hidden}}
+.mq-evidence-screen.storm-scene .mq-storm-narration.mq-dialogue{
+ position:absolute;top:auto;bottom:3.2%;left:50%;transform:translateX(-50%);
+ width:min(960px,92vw);height:clamp(170px,25vh,230px);
+ min-height:0;overflow:auto;z-index:8;
+ display:flex;flex-direction:column;justify-content:flex-start;
+ background:linear-gradient(140deg,rgba(54,72,88,.38),rgba(11,25,38,.62));
+ border:1px solid #ffffff66;border-top:1px solid #ffffff99;
+ box-shadow:0 20px 70px #000a;backdrop-filter:blur(26px) saturate(140%);
+ animation:none;
+}
+.mq-evidence-screen.storm-scene .mq-storm-narration .mq-dialogue-actions{margin-top:auto;padding-top:5px}
+.mq-evidence-screen.storm-scene .mq-storm-narration p{font-size:clamp(14px,1.55vw,19px);line-height:1.55;margin:0 0 8px}
+@media(max-width:680px){
+ .mq-dialogue-scene .mq-dialogue{height:clamp(242px,43vh,360px);max-height:55vh}
+ .mq-evidence-screen.storm-scene .mq-storm-video-wrap{top:32%;width:94vw}
+ .mq-evidence-screen.storm-scene .mq-storm-narration.mq-dialogue{bottom:2.5%;height:min(255px,38vh);padding:14px 15px}
+}
+
+.mq-panorama.mars-look .mq-panorama-scene{background-size:220% 100%;background-position:var(--pan,0%) center}
+.mq-panorama.moon-look .mq-panorama-scene{background-position:var(--pan,0%) center}
