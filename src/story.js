@@ -5,17 +5,17 @@ window.MIRA_STORIES = {
  opportunity: [
  {act:'01 · THE VOICE IN THE VALLEY', beats:[
  ['OPPORTUNITY','...'],
- ['OPPORTUNITY','That signal. It changed. There is someone on the other end, isn’t there?'],
+ ['OPPORTUNITY','I never thought someone would answer after all this time. Are you really here?'],
  ['PLAYER','I’m here. I followed it all the way to Mars.'],
- ['OPPORTUNITY','Then hello, '+ '{name}' +'. I should probably introduce myself. But first... would you stay for a moment?'],
+ ['OPPORTUNITY','Then... hello, '+ '{name}' +'. You came a very long way. Would you stay and talk with me for a little while?'],
  ['PLAYER','Of course.'],
  ['OPPORTUNITY','Thank you. This place is called Perseverance Valley. I spent the last part of my journey here, on the edge of a crater so enormous that its opposite rim can be difficult to see.'],
- ['OPPORTUNITY','My name is Opportunity. I was built on Earth to explore the rocks of Mars. My last message home was sent a very long time ago.'],
+ ['OPPORTUNITY','My name is Opportunity. I’m a robotic explorer sent from Earth. My job was to travel across Mars, examine its rocks, and help scientists discover what this planet was like long ago.'],
  ['PLAYER','Opportunity. That’s a beautiful name.'],
  ['OPPORTUNITY','It was a remarkably suitable one. There are places I was never expected to reach, and questions I was never expected to answer.'],
  ['OPPORTUNITY','You probably noticed I’m not driving anymore. But my mission record is here. If you’re curious, I can show you how this extraordinary journey began.'],
  ['PLAYER','I’d love to see it.'],
- ['OPPORTUNITY','Then we should begin with a promise that was never meant to last as long as it did.']
+ ['OPPORTUNITY','Then let me take you back to the beginning. Even the engineers who built me couldn’t have imagined how far this story would go.']
  ]},
  {act:'02 · NINETY MARTIAN SUNRISES',beats:[
  ['OPPORTUNITY','When NASA sent me here, the main mission was designed for ninety sols.'],
@@ -25,7 +25,7 @@ window.MIRA_STORIES = {
  ['OPPORTUNITY','It wasn’t. Ninety was the goal. It was enough time, if everything went well, to begin investigating the rocks and looking for signs of ancient water.'],
  ['OPPORTUNITY','Would you like to see how many Martian sunrises I actually experienced?'],
  ['PLAYER','Show me.']
- ], evidence:{title:'A promise of 90 sols',kind:'stat',stat1:'90',stat2:'5,111',explain:'A sol is one Martian day—about 24 hours and 39 minutes. Opportunity’s planned 90-sol mission stretched to 5,111 sols by its last contact. That is more than 56 times the original plan.',caption:'NASA / JPL-Caltech · Mission timeline · Last contact June 10, 2018'}, after:[
+ ], evidence:{title:'Ninety sunrises... and then?',kind:'stat',stat1:'90',stat2:'5,111',explain:'A sol is one Martian day—about 24 hours and 39 minutes. Opportunity’s planned 90-sol mission stretched to 5,111 sols by its last contact. That is more than 56 times the original plan.',caption:'NASA / JPL-Caltech · Mission timeline · Last contact June 10, 2018'}, after:[
  ['PLAYER','Five thousand one hundred and eleven?!'],
  ['OPPORTUNITY','That was my final recorded sol. Almost fifteen Earth years had passed since landing.'],
  ['PLAYER','Were you expecting to live that long?'],
@@ -40,7 +40,7 @@ window.MIRA_STORIES = {
  ['OPPORTUNITY','That mattered. Rocks are records. A layer can preserve clues about what the environment was like when it formed—long before anyone sent a rover here.'],
  ['PLAYER','Can I see what you saw?'],
  ['OPPORTUNITY','Yes. Look carefully. Don’t rush past the small details.']
- ],evidence:{title:'The first view',kind:'image',file:'first-panorama.jpg',caption:'NASA/JPL-Caltech · Opportunity first panorama · Eagle Crater · PIA05199',explain:'Explore the actual Martian panorama. The exposed outcrop near the crater rim gave Opportunity an extraordinary early chance to study layered rock.',zoom:true},after:[
+ ],evidence:{title:'The first view',kind:'image',file:'first-panorama.jpg',caption:'NASA/JPL-Caltech · Opportunity first panorama · Eagle Crater · PIA05199',explain:'This is one of my earliest views from Mars. See those exposed layers of rock along the crater rim? I had barely arrived, and the first clues were right in front of me.',zoom:true},after:[
  ['PLAYER','Those rocks look like they’re stacked in layers.'],
  ['OPPORTUNITY','Exactly. That was the beginning of the investigation. We could look at the rocks, but a picture alone couldn’t tell us their whole story.'],
  ['OPPORTUNITY','My team had given me a camera mast, a robotic arm, a tool to brush and grind rock surfaces, and instruments to measure what rocks contained.'],
@@ -53,7 +53,7 @@ window.MIRA_STORIES = {
  ['PLAYER','Like pebbles?'],
  ['OPPORTUNITY','Some were only a few millimeters across. The science team called them “blueberries.” Not because they were fruit—but because they looked like tiny berries sprinkled over the surface.'],
  ['OPPORTUNITY','Here. See if you can find them before I explain why they mattered.']
- ],evidence:{title:'Find the blueberries',kind:'hotspot',file:'berries.jpg',caption:'NASA/JPL-Caltech · “Berry Bowl” rock target · PIA05634',explain:'Look for the small, rounded mineral spherules scattered among the rock. Tap the magnifier to examine the actual NASA image closely.',zoom:true},after:[
+ ],evidence:{title:'Find the blueberries',kind:'hotspot',file:'berries.jpg',caption:'NASA/JPL-Caltech · “Berry Bowl” rock target · PIA05634',explain:'Look closely at this photograph. Do you see those little round shapes among the rocks? I found them in the place my science team called Berry Bowl. Try magnifying one.',zoom:true},after:[
  ['PLAYER','They really are round! What are they made of?'],
  ['OPPORTUNITY','Measurements found that the spherules were rich in hematite, an iron-bearing mineral. Together with the surrounding sedimentary rock, they provided evidence that water had affected this place long ago.'],
  ['PLAYER','So Mars used to have oceans here?'],
@@ -65,10 +65,10 @@ window.MIRA_STORIES = {
  ]},
  {act:'05 · THE ROBOT GEOLOGIST',beats:[
  ['PLAYER','What could your instruments do that your cameras couldn’t?'],
- ['OPPORTUNITY','My panoramic cameras showed the terrain and helped scientists choose targets. My microscopic imager revealed textures too small to appreciate from a distance.'],
- ['OPPORTUNITY','The Rock Abrasion Tool could remove dusty outer material to reveal a fresher surface. Other instruments then measured chemical and mineral clues.'],
+ ['OPPORTUNITY','You can see my camera mast in the picture. And there are other little instruments you might overlook at first. Each helped my team ask a different question.'],
+ ['OPPORTUNITY','Some studied the landscape, some analyzed rocks, and some even helped us understand Martian dust or check that our camera colors were accurate.'],
  ['OPPORTUNITY','The clever part was combining these measurements. Each instrument had a different piece of the question.'],
- ['OPPORTUNITY','Try inspecting my equipment. Choose what you would use if you wanted to study a suspicious rock.']
+ ['OPPORTUNITY','Let’s investigate together. Choose any of the five labeled parts in this photograph, and I’ll tell you what I used it for.']
  ],evidence:{title:'Meet the robot geologist',kind:'instrument',file:'opp-instruments.webp',caption:'NASA / JPL-Caltech · Mars Exploration Rover equipment reference',explain:'Inspect three ways Opportunity studied rocks. The highlighted descriptions represent actual instrument functions; this is not a live rover control panel.'},after:[
  ['PLAYER','So taking a photograph was only the beginning.'],
  ['OPPORTUNITY','Very often. My team had to decide where to drive, what to inspect, and which measurements were worth the time and power.'],
@@ -104,17 +104,15 @@ window.MIRA_STORIES = {
  ['OPPORTUNITY','That’s the remarkable part. The evidence suggests different environments, changing over immense spans of time. Mars was not one simple picture.'],
  ['OPPORTUNITY','We didn’t discover living things. We discovered records of conditions—and we learned that the planet’s history was much richer than it first appeared.'],
  ['OPPORTUNITY','Here is one of those later clues.']
- ],evidence:{title:'Another clue, years later',kind:'image',file:'gypsum-vein.png',caption:'NASA / JPL-Caltech · Opportunity Homestake mineral vein · source requires image-by-image credit check',explain:'This image illustrates the bright Homestake vein. NASA identified calcium sulfate consistent with gypsum—evidence of a different watery environment.',zoom:true},after:[
+ ],evidence:{title:'Another clue, years later',kind:'image',file:'gypsum-vein.png',caption:'NASA / JPL-Caltech · Opportunity Homestake mineral vein · source requires image-by-image credit check',explain:'Look at the narrow bright stripe in the rock. My team named it Homestake. The mineral gypsum was evidence of water—and another clue that Mars had more than one kind of watery past.',zoom:true},after:[
  ['PLAYER','I thought the story was just “Mars had water.” It’s much more complicated.'],
  ['OPPORTUNITY','And much more interesting. The exciting part of science is that a new clue can change how you understand the old ones.'],
  ['OPPORTUNITY','I spent years following those clues. Until one day, the sunlight changed.'],
  ['PLAYER','What happened in 2018?'],
  ['OPPORTUNITY','...'],
- ['OPPORTUNITY','In June of that year, a dust storm spread around Mars. The atmosphere grew so thick with dust that sunlight reaching my solar panels dropped sharply.'],
- ['OPPORTUNITY','I depended on sunlight. Without enough of it, I could not keep operating as before.'],
- ['OPPORTUNITY','My last recorded communication reached Earth on June 10, 2018. What happened inside me after that is not something the record can tell us for certain.'],
- ['OPPORTUNITY','Let me show you what the storm was like.']
- ],evidence:{title:'When the sunlight vanished',kind:'storm',caption:'Supplied cinematic simulation with original embedded storm sound · not documentary NASA footage',explain:'A dramatized depiction of the 2018 planet-encircling dust storm. The real rover’s last contact was June 10, 2018. NASA continued recovery attempts and formally ended the mission in February 2019.'}, after:[
+ ['OPPORTUNITY','I remember the sunlight growing faint. On Mars, I depended on it for everything. Then the dust kept coming.'],
+ ['OPPORTUNITY','Would you look at that moment with me?']
+ ],evidence:{title:'The storm',kind:'storm',caption:'AI-assisted supplied simulation of the 2018 Mars-wide dust storm, not historical NASA footage',explain:'NASA confirms Opportunity last contacted Earth on June 10, 2018. The storm reduced solar energy; what precisely happened inside the rover afterward is unknown.'}, after:[
  ['PLAYER','That was a lot of dust. Did NASA try to reach you again?'],
  ['OPPORTUNITY','For months. My team sent commands and listened. The storm eventually subsided, but no response came back. NASA announced the mission’s end in February 2019.'],
  ['PLAYER','That makes me sad.'],
@@ -155,7 +153,7 @@ window.MIRA_STORIES = {
  ['PLAYER','Why not just lift the whole thing back up?'],
  ['EAGLE','Because carrying extra mass off the Moon would require more propellant. The engineers designed the lower stage to remain as a stable base while the upper stage departed.'],
  ['EAGLE','Take a closer look. Try identifying the parts before we return to the story.']
- ],evidence:{title:'Two stages. Two jobs.',kind:'stages',file:'assets/art/eagle/g53.png',caption:'AI-assisted engineering reconstruction · refer to NASA Apollo 11 LM-5 drawings',explain:'Inspect the ascent cabin, descent stage and landing legs. This reconstruction illustrates the architecture; NASA technical diagrams are the definitive reference.'},after:[
+ ],evidence:{title:'Two stages. Two jobs.',kind:'stages',file:'assets/art/eagle/g53.png',caption:'AI-assisted engineering reconstruction · refer to NASA Apollo 11 LM-5 drawings',explain:'Look at the spacecraft I once was. The upper stage could leave the Moon, while my lower stage could bring the astronauts down safely. Try examining each part separately.'},after:[
  ['PLAYER','So the part I’m talking to is the one that stayed.'],
  ['EAGLE','Correct. The upper stage left the surface. The lower stage remained. Both were necessary to complete the mission.'],
  ['EAGLE','And long before that departure, there was the matter of getting to the ground without hitting it too hard.'],
@@ -168,7 +166,7 @@ window.MIRA_STORIES = {
  ['EAGLE','The descent engine had to reduce the lunar module’s velocity while the crew and guidance system monitored the landing.'],
  ['EAGLE','During the final approach, the crew also had to avoid dangerous terrain. This was not a neat, automatic animation. These were real decisions with real consequences.'],
  ['EAGLE','Choose an approach in this simplified exercise. You aren’t controlling the historical Apollo 11 mission—the outcome of that mission is already recorded.']
- ],evidence:{title:'A landing without parachutes',kind:'landing',file:'apollo-historical.jpg',caption:'NASA Apollo 11 historical imagery · learning interaction is illustrative',explain:'Choose the method that explains why the descent engine needed controlled thrust. Historical Apollo 11 events remain unchanged.'},after:[
+ ],evidence:{title:'A landing without parachutes',kind:'landing',file:'apollo-historical.jpg',caption:'NASA Apollo 11 historical imagery · learning interaction is illustrative',explain:'Here is a simplified version of the problem my descent engine had to solve: slow down enough to land safely, without wasting the propellant needed for control. Which approach would you choose?'},after:[
  ['PLAYER','The engine had to slow you down, but not waste everything.'],
  ['EAGLE','Precisely. And just as importantly, the astronauts had to reach a site where landing was possible.'],
  ['EAGLE','On July 20, 1969, Neil Armstrong reported that Eagle had landed. Two astronauts were on the lunar surface, and a third remained in lunar orbit in the command module.'],
@@ -184,7 +182,7 @@ window.MIRA_STORIES = {
  ['EAGLE','Yes. The reflector returns a tiny fraction of the light toward Earth. Scientists can time that round trip. Light is fast, but it still takes time to travel that far.'],
  ['EAGLE','And there is an important distinction: those experiments were deployed separately. They were not simply built into my descent stage.'],
  ['EAGLE','Choose one to examine, and then the other. You’ll see the actual mission photographs.']
- ],evidence:{title:'Science on the Moon',kind:'science',caption:'NASA / Apollo Lunar Surface Journal · Early Apollo Surface Experiments Package (EASEP)',explain:'Inspect two separately deployed Apollo 11 experiments. Their photographs are historical NASA material.'},after:[
+ ],evidence:{title:'Science on the Moon',kind:'science',caption:'NASA / Apollo Lunar Surface Journal · Early Apollo Surface Experiments Package (EASEP)',explain:'The astronauts carried experiments onto the lunar surface and set them up near me. One listened for vibrations, and another reflected light back toward Earth. Which would you like to see first?'},after:[
  ['PLAYER','I never knew they left equipment to do science too.'],
  ['EAGLE','The scientific work extended beyond the footprints. Instruments, samples, and photographs helped researchers ask questions they could not answer from Earth alone.'],
  ['EAGLE','But the astronauts could not stay indefinitely. They had to return to their companion in lunar orbit.'],
