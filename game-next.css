@@ -152,3 +152,22 @@
 .mq-neil-moment img{max-height:40vh}
 .mq-final-option{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}
 @media(max-width:600px){.mq-neil-moment{left:50%;right:auto;width:min(220px,51vw);top:10%}.mq-neil-moment img{max-height:26vh}.mq-final-option{bottom:7%}}
+
+
+/* v9 micro-patch: tiny external back arrow, smoother panorama dragging, instrument focus zoom */
+#game{opacity:1;transition:opacity .28s ease}
+#game.mq-fade-out{opacity:0}
+.mq-dialogue-back{}
+.mq-back-arrow{position:absolute;left:50%;bottom:max(6px,1.1vh);transform:translateX(-50%);z-index:6;width:34px;height:34px;min-height:34px;min-width:34px;border-radius:999px;padding:0;background:rgba(7,19,32,.68);border:1px solid rgba(255,255,255,.28);color:#f6e2bf;font:700 18px/1 'Space Grotesk';box-shadow:0 10px 25px rgba(0,0,0,.35)}
+.mq-back-arrow:hover{background:rgba(16,31,48,.85);transform:translateX(-50%) translateY(-1px)}
+.mq-dialogue-scene .mq-dialogue-actions{justify-content:flex-end}
+.mq-dialogue-scene .mq-dialogue{padding-bottom:16px}
+.mq-dialogue-scene .mq-dialogue-actions .mq-btn{min-width:180px}
+.mq-evidence-visual.mq-zoomable{cursor:zoom-in}
+.mq-evidence-visual.mq-zoomable.mq-zoomed{cursor:zoom-out}
+.mq-evidence-visual.mq-zoomable img{transform-origin:var(--zx,50%) var(--zy,50%)}
+.mq-panorama.mars-look .mq-panorama-scene{image-rendering:auto}
+.mq-panorama.mars-look.mq-dragging .mq-panorama-scene,.mq-panorama.moon-look.mq-dragging .mq-panorama-scene{transition:none!important}
+.mq-neil-moment{left:47%;width:min(390px,38vw)}
+.mq-neil-moment img{max-height:46vh}
+@media(max-width:600px){.mq-back-arrow{bottom:max(5px,.8vh)}.mq-neil-moment{left:50%;width:min(255px,64vw)}.mq-neil-moment img{max-height:30vh}}
