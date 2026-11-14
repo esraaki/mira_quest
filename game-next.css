@@ -184,3 +184,8 @@
 .mq-panorama.mars-look.mq-farewell-panorama .mq-panorama-scene{background-image:url('assets/photos/mars-panorama-farewell.jpg')!important}
 .mq-panorama.mq-dragging .mq-panorama-scene{transition:none!important}
 .mq-panorama-scene{transition:background-position .27s cubic-bezier(.22,.78,.3,1)}
+
+/* v11: logo beside header wordmark; no other visual changes */
+.mq-brand{display:inline-flex;align-items:center;gap:7px}
+.mq-brand .mq-header-logo{width:22px;height:22px;object-fit:contain;flex-shrink:0}
+@media(max-width:520px){.mq-brand .mq-header-logo{width:18px;height:18px}}
