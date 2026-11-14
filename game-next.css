@@ -171,3 +171,16 @@
 .mq-neil-moment{left:47%;width:min(390px,38vw)}
 .mq-neil-moment img{max-height:46vh}
 @media(max-width:600px){.mq-back-arrow{bottom:max(5px,.8vh)}.mq-neil-moment{left:50%;width:min(255px,64vw)}.mq-neil-moment img{max-height:30vh}}
+
+/* v10 narrow corrections */
+.mq-back-arrow{left:max(4vw,calc((100vw - min(960px,92vw))/2));bottom:calc(3.8% - 32px);transform:none!important;width:24px;height:24px;min-width:24px;min-height:24px;border:0;border-radius:0;box-shadow:none;background:transparent!important;color:#f1ddbb;font:600 19px/1 'Space Grotesk';padding:0;text-align:left}
+.mq-back-arrow:hover{color:#fff;transform:none!important}
+@media(max-width:520px){.mq-back-arrow{left:3vw;bottom:calc(2% - 27px);width:22px;height:22px}}
+.mq-neil-moment{position:absolute;left:50%!important;right:auto!important;transform:translateX(-50%)!important;top:10%!important;width:min(330px,44vw)!important;max-width:88vw;padding:9px;display:flex;flex-direction:column;align-items:center}
+.mq-neil-moment img{width:auto!important;height:min(48vh,405px)!important;max-width:100%!important;max-height:none!important;object-fit:contain}
+.mq-neil-moment figcaption{width:100%;font-size:9px}
+@media(max-width:600px){.mq-neil-moment{top:9%!important;width:min(250px,64vw)!important}.mq-neil-moment img{height:min(30vh,260px)!important}}
+.mq-panorama.mars-look:not(.mq-farewell-panorama) .mq-panorama-scene{background-image:url('assets/art/opportunity/g34-fixed.png')!important}
+.mq-panorama.mars-look.mq-farewell-panorama .mq-panorama-scene{background-image:url('assets/photos/mars-panorama-farewell.jpg')!important}
+.mq-panorama.mq-dragging .mq-panorama-scene{transition:none!important}
+.mq-panorama-scene{transition:background-position .27s cubic-bezier(.22,.78,.3,1)}

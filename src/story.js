@@ -234,7 +234,7 @@ window.MIRA_STORIES = {
  ['EAGLE','Thank you for looking closely, '+ '{name}' +'. The Moon is not merely a bright circle above Earth. It is a world with a history—and a place where human-made hardware marks an extraordinary visit.'],
  ['EAGLE','When you see it in the sky again, you’ll know a little more about what is resting there.'],
  ['PLAYER','Goodbye, Eagle.'],
- ['EAGLE','Safe travels, '+ '{name}' +'. There are more stories waiting in the archive.']
+ ['EAGLE','Safe travels, '+ '{name}' +'. Thank you for remembering what happened here.']
  ]}
  ]
 };
